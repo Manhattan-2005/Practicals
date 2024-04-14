@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="displayResult"
+    tools:context=".Practical_9_Exercise1">
+
+    <ToggleButton
+        android:id="@+id/toggle_For_Practical9_Exercise1"
+        android:layout_width="139dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginEnd="127dp"
+        android:checked="false"
+        android:onClick="displayResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_For_Practical9_Exercise1"
+        android:layout_width="161dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="116dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggle_For_Practical9_Exercise1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <permission
+        android:name="com.shiva.READ_PERMISSION"
+        android:protectionLevel="normal" />
+    <permission
+        android:name="com.shiva.WRITE_PERMISSION"
+        android:protectionLevel="normal" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Messaging permissions -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Practicals"
+        tools:targetApi="31" >
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC--vUzwAXZ2JVkEzHF2tf9wYvNCAwQ5JI" />
+
+        <activity
+            android:name=".Practical_32_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_31_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_30_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_29_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_28_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_27_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_26_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_25_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_24_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_23_Exercise2"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.shiva.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Practical_23_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_22_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_22_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_21_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_20_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_20_Exercise1"
+            android:exported="false" />
+
+        <provider
+            android:name=".StudentContentProvider"
+            android:authorities="com.shiva.StudentContentProvider"
+            android:exported="true"
+            android:readPermission="com.shiva.READ_PERMISSION"
+            android:writePermission="com.shiva.WRITE_PERMISSION" />
+
+        <activity
+            android:name=".Practical_19_Exercise1"
+            android:exported="true" />
+        <activity
+            android:name=".Calc_Factorial"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_18_Program"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_16_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_18_Exercises"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_17_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_16_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_15_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_15_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".ImageViewExample"
+            android:exported="false" />
+        <activity
+            android:name=".GridViewExample"
+            android:exported="false" />
+        <activity
+            android:name=".ListViewExample"
+            android:exported="false"
+            android:label="@string/title_activity_list_view_example"
+            android:theme="@style/Theme.Practicals" />
+        <activity
+            android:name=".Practical_13_Exercise1_and_2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_12_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_11_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_14_Program"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_13_Program"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_11_Program"
+            android:exported="false" />
+        <activity
+            android:name=".Register_Page"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_10_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_9_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_9_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_9_Program"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_10_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_8_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_5_Exercise1"
+            android:exported="false"
+            android:label="@string/title_activity_practical5_exercise1"
+            android:theme="@style/Theme.Practicals" />
+        <activity
+            android:name=".Practical_7_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_7_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_6_Exercise2"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_6_Exercise1"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_4_Exercise"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_8_Program"
+            android:exported="false" />
+        <activity
+            android:name=".Practical_4_Program"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service android:name=".CustomService" />
+    </application>
+
+</manifest>

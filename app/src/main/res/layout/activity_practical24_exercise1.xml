@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="30dp"
+    tools:context=".Practical_24_Exercise1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/turnOn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Turn on"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/setVisible"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Set Visible"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/listDevices"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="List Devices"
+            android:layout_alignParentStart="true"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/turnOff"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="Turn off"
+            android:layout_alignParentEnd="true"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+</LinearLayout>
